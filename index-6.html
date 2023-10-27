@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ingreso con Contraseña</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gshmks:lspeuyilegi:</h1>
+    <form id="passwordForm">
+        <input type="password" id="passwordInput" placeholder="Contraseña">
+        <button type="button" id="submitButton">Ingresar</button>
+    </form>
+    <p id="message"></p>
+
+    <table>
+        <tr>
+            <th>Tabla</th>
+            <th>Abecedario</th>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>a</td>
+        </tr>
+        <tr>
+            <td>f</td>
+            <td>b</td>
+        </tr>
+        <tr>
+            <td>g</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>h</td>
+            <td>d</td>
+        </tr>
+        <tr>
+            <td>i</td>
+            <td>e</td>
+        </tr>
+        <tr>
+            <td>j</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>k</td>
+            <td>g</td>
+        </tr>
+        <tr>
+            <td>l</td>
+            <td>h</td>
+        </tr>
+        <tr>
+            <td>m</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>n</td>
+            <td>j</td>
+        </tr>
+        <tr>
+            <td>o</td>
+            <td>k</td>
+        </tr>
+        <tr>
+            <td>p</td>
+            <td>l</td>
+        </tr>
+        <tr>
+            <td>q</td>
+            <td>m</td>
+        </tr>
+        <tr>
+            <td>r</td>
+            <td>n</td>
+        </tr>
+        <tr>
+            <td>s</td>
+            <td>o</td>
+        </tr>
+        <tr>
+            <td>t</td>
+            <td>p</td>
+        </tr>
+        <tr>
+            <td>u</td>
+            <td>q</td>
+        </tr>
+        <tr>
+            <td>v</td>
+            <td>r</td>
+        </tr>
+        <tr>
+            <td>w</td>
+            <td>s</td>
+        </tr>
+        <tr>
+            <td>x</td>
+            <td>t</td>
+        </tr>
+        <tr>
+            <td>y</td>
+            <td>u</td>
+        </tr>
+        <tr>
+            <td>z</td>
+            <td>v</td>
+        </tr>
+        <tr>
+            <td>a</td>
+            <td>w</td>
+        </tr>
+        <tr>
+            <td>b</td>
+            <td>x</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>y</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>z</td>
+        </tr>
+    </table>
+
+    <script>
+        const password = "holaquehace";
+
+        document.getElementById("submitButton").addEventListener("click", function () {
+            const enteredPassword = document.getElementById("passwordInput").value;
+
+            if (enteredPassword === password) {
+                document.getElementById("message").textContent = "Mi estimada Vale, si hace un viaje en sus memorias recordará el mensaje amoroso previamente escrito por su presencia. En ese entonces no tenía claro el motivo o causa de tal acontecimiento, por ello he de escribir esto. Si le soy sincera, sí tengo ese afecto hacia su persona, ya que le concierne una actitud muy linda de su parte y no he podido decir esto porque muy rara vez doy cumplidos. Usted es una persona muy linda en todos los aspectos que se puedan pensar. No los mencionaré porque, de lo contrario, este texto se haría muy largo. Realmente no lo tengo del todo claro la idea de tener una relación, pero estoy dispuesto a ello. Espero que esos sentimientos sigan vivaces porque me arrepiento de negar lo innegable.";
+            } else {
+                document.getElementById("message").textContent = "Contraseña incorrecta. Inténtalo de nuevo.";
+            }
+        });
+    </script>
+</body>
+</html>
